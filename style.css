@@ -88,3 +88,32 @@
     z-index: -1;
     height: 100%; /* Make sure the image covers the whole container */
 }
+
+
+.product {
+    transition: transform 0.6s ease, background-color 0.9s ease; /* Added ease for background-color */
+    
+}
+  
+  .product:hover {
+    transform: scale(1.27);
+    background-color: rgb(207, 30, 30);
+  }
+
+  .FeaturedProducts {
+    background-image: linear-gradient(rgba(245, 241, 241, 0), rgba(255, 255, 255, 0.5)), url('./assets/bg5.jpg');
+    
+}
+
+
+.Products{
+    margin-top: 7%;
+}
+
+.PopularProduct{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    
+    align-content: center;
+}

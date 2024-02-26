@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* You can remove this style block if you're using tailwind for all styles */
+        .bg_wallpaper {
+            background-image: url('./assets/bg1.jpg'); /* Placeholder 4k image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Navbar background color and text color */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+        }
+
+        /* Navbar link styles */
+        .navbar a {
+            color: white; /* White text color */
+        }
+
+    </style>
 </head>
-<body>
+
+<body class="bg-gray-200">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed w-full z-10">
+        <div class="container mx-auto py-4 px-8 flex justify-between items-center">
+            <div>
+                <a href="#" class="text-xl font-bold flex items-center">
+                    <img src="./assets/logo.jfif" alt="logo" class="h-12 w-12 rounded-full mr-2"> <!-- Circular logo -->
+                    Pokemon Store
+                </a>
+            </div>
+            <div>
+                <a href="#" class="text-xl font-bold">Home</a>
+                <a href="#" class="ml-4">About Us</a>
+                <a href="#" class="ml-4">Products</a>
+                <a href="#" class="ml-4">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content with Background Image -->
+    <div class="bg_wallpaper h-screen flex justify-center items-center">
+        <div class="text-center text-white">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl">Welcome to Pokemon Store</h2>
+            <p class="mt-4 text-lg md:text-xl lg:text-2xl">Your one-stop shop for all things Pokemon!</p>
+        </div>
+    </div>
     
+
 </body>
+
 </html>

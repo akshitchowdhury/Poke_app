@@ -102,13 +102,17 @@
 
   .FeaturedProducts {
     background-image: linear-gradient(rgba(245, 241, 241, 0), rgba(255, 255, 255, 0.5)), url('./assets/bg5.jpg');
-    
+    background-attachment: fixed;     
 }
 
 
+.FeaturedShops{
+    background-color: aquamarine;
+}
+
 .Products {
     margin-top: 7%;
-    border: 3pt solid red;
+    /* border: 3pt solid red; */
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -127,4 +131,10 @@
 .PopularProduct{
     margin-top: 5%;
     margin-left: 5%;
+}
+
+.p1{
+    background-size: contain;
+    width: 200px;
+    height: 200px;
 }
